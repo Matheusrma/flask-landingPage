@@ -12,7 +12,7 @@
 		<div class="jumbotron">
 			<div class="container">
 		    	<h1>What a Day: Rio</h1>
-		    	<!--<p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
+		    	<p>Generate a Plan for a legendary day at Rio de Janeiro</p>
 		  </div>
 		</div>
 		
@@ -20,7 +20,7 @@
 			<div id="cntr-main" class="col-lg-6">
 				<div id="cntr-generate-day">
 			    	<button id="btn-generate-day" type="button" class="btn btn-block btn-success btn-lg">
-			    		Generate a Day Plan
+			    		New Day Plan
 			    	</button>
 			  	</div><!-- /.col-lg-6 -->
 
@@ -43,7 +43,7 @@
 			$(document).ready(function(){
 
 				$("#btn-generate-day").click(function(e){
-					$("#day-container").css("display","block");
+					$("#day-container").fadeOut(0).delay(500).slideDown(200);
 				});
 
 			});
