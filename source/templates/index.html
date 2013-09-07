@@ -11,33 +11,30 @@
 
 		<div class="jumbotron">
 			<div class="container">
-		    	<h1>What a Day!</h1>
+		    	<h1>What a Day: Rio</h1>
 		    	<!--<p><a class="btn btn-primary btn-lg">Learn more</a></p> -->
 		  </div>
 		</div>
 		
 		<div class="row">
-			<div class="col-lg-6">
-		    	<div class="input-group">
-		    		<!-- <input type="text" class="form-control"> -->
-		    		<span class="input-group-btn">
-			    		<button id="search-button" class="btn btn-default" type="button">Get a Day!</button>
-			    	</span>
-		    	</div><!-- /input-group -->
-		  	</div><!-- /.col-lg-6 -->
-		</div>
-		
-		<div class="row">
-	  		<div id="day-container" class="col-lg-4">
-	  			<ul class="list-group">
-					<li class="list-group-item">9:00 - 12:00: Jardim botânico</li>
-					<li class="list-group-item">12:00 - 14:00: Almoço no restaurante X</li>
-					<li class="list-group-item">14:00 - 20:00: Passeio na lagoa</li>
-					<li class="list-group-item">20:00 - 23:00: Jantar na lagoa</li>
-				</ul>
-	  		</div>
-	  	</div>
+			<div id="cntr-main" class="col-lg-6">
+				<div id="cntr-generate-day">
+			    	<button id="btn-generate-day" type="button" class="btn btn-block btn-success btn-lg">
+			    		Generate a Day Plan
+			    	</button>
+			  	</div><!-- /.col-lg-6 -->
 
+			  	<div id="day-container">
+		  			<ul class="list-group">
+						<li class="list-group-item">9:00 - 12:00: Jardim botânico</li>
+						<li class="list-group-item">12:00 - 14:00: Almoço no restaurante X</li>
+						<li class="list-group-item">14:00 - 20:00: Passeio na lagoa</li>
+						<li class="list-group-item">20:00 - 23:00: Jantar na lagoa</li>
+					</ul>
+		  		</div>
+		  	</div>
+		</div>
+	
 		<script src="//code.jquery.com/jquery.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
    		<script src="static/js/bootstrap.min.js"></script>
@@ -45,7 +42,7 @@
    		<script>
 			$(document).ready(function(){
 
-				$("#search-button").click(function(e){
+				$("#btn-generate-day").click(function(e){
 					$("#day-container").css("display","block");
 				});
 

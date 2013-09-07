@@ -1,2 +1,12 @@
 #day-container {
   display: none; }
+
+#cntr-generate-day {
+  width: 60%;
+  height: 50px;
+  margin: 20px auto;
+  float: center; }
+
+#cntr-main {
+  margin: 0 auto;
+  float: center; }
