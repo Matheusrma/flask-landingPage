@@ -2,19 +2,33 @@
   display: none; }
 
 #cntr-generate-day {
-  width: 60%;
+  width: 40%;
   height: 50px;
   margin: 20px auto;
   float: center; }
 
-#cntr-main {
+#cntr-title {
+  text-align: center;
   margin: 0 auto;
   float: center; }
+  #cntr-title h1 {
+    color: FFFFFF;
+    text-shadow: 2px 2px 2px 111111;
+    font-size: 36pt;
+    font-family: Verdana; }
+  #cntr-title p {
+    color: FFFFFF;
+    text-shadow: 2px 2px 2px 111111;
+    font-size: 16pt;
+    font-family: Verdana;
+    font-weight: bold; }
 
-#cntr-background-img {
-  /*background-image: url(../img/rio.jpg);*/ }
-  #cntr-background-img img {
-    position: absolute;
-    z-index: -1;
-    width: 100% !important;
-    height: 100% !important; }
+#cntr-main {
+  margin: 50px auto;
+  float: left; }
+
+#cntr-background-img img {
+  position: absolute;
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important; }

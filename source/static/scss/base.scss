@@ -5,20 +5,43 @@
 
 #cntr-generate-day
 {
-	width: 60%;
+	width: 40%;
 	height: 50px;
 	margin:20px auto;
 	float:center;
 }
 
-#cntr-main
+#cntr-title
 {
+	h1
+	{
+		color : FFFFFF;
+		text-shadow: 2px 2px 2px 111111;
+		font-size: 36pt;
+		font-family: Verdana;
+	}
+
+	p
+	{
+		color : FFFFFF;
+		text-shadow: 2px 2px 2px 111111;
+		font-size: 16pt;
+		font-family: Verdana;
+		font-weight: bold;
+	}
+
+	text-align: center;
 	margin:0 auto;
 	float:center;
 }
 
+#cntr-main
+{
+	margin:50px auto;
+	float:left;
+}
+
 #cntr-background-img {
-    /*background-image: url(../img/rio.jpg);*/
     img
     {
 		position: absolute;
@@ -26,9 +49,4 @@
     	width: 100% !important;
     	height: 100% !important;
     }
-}
-
-#cntr-title
-{
-
 }
