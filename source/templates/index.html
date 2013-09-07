@@ -9,7 +9,11 @@
 
 	<body>
 
-		<div class="jumbotron">
+		<div id="cntr-background-img">
+			<img src="static/img/rio.jpg" alt="Background Image" title="Background Image" />
+		</div>
+
+		<div id="ctnr-title" class="jumbotron">
 			<div class="container">
 		    	<h1>What a Day: Rio</h1>
 		    	<p>Generate a Plan for a legendary day at Rio de Janeiro</p>
@@ -43,7 +47,10 @@
 			$(document).ready(function(){
 
 				$("#btn-generate-day").click(function(e){
-					$("#day-container").fadeOut(0).delay(500).slideDown(200);
+					$("#day-container").clearQueue();
+					$("#day-container").fadeOut(0);
+					$("#day-container").delay(250);
+					$("#day-container").slideDown(200);
 				});
 
 			});
