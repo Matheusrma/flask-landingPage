@@ -1,7 +1,10 @@
-#day-container {
-  display: none; }
-
 #cntr-generate-day {
+  width: 40%;
+  height: 50px;
+  margin: 20px auto;
+  float: center; }
+
+#cntr-about-btn {
   width: 40%;
   height: 50px;
   margin: 20px auto;
@@ -15,20 +18,33 @@
     color: FFFFFF;
     text-shadow: 2px 2px 2px 111111;
     font-size: 36pt;
-    font-family: Verdana; }
+    font-family: Lucida; }
   #cntr-title p {
     color: FFFFFF;
     text-shadow: 2px 2px 2px 111111;
     font-size: 16pt;
-    font-family: Verdana;
-    font-weight: bold; }
+    font-weight: bold;
+    font-family: Lucida; }
 
 #cntr-main {
   margin: 50px auto;
   float: left; }
+
+#cntr-about {
+  margin: 50px auto;
+  float: left; }
+  #cntr-about p {
+    color: FFFFFF;
+    text-shadow: 2px 2px 2px 111111;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: Lucida; }
 
 #cntr-background-img img {
   position: absolute;
   z-index: -1;
   width: 100% !important;
   height: 100% !important; }
+
+.initially-hidden {
+  display: none; }

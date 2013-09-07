@@ -13,8 +13,6 @@
 			<img src="static/img/rio.jpg" alt="Background Image" title="Background Image" />
 		</div>
 
-		
-
 		<div class="row">
 			<div id="cntr-main" class="col-lg-6">
 
@@ -22,14 +20,20 @@
 			    	<h1>What a Day: Rio</h1>
 			    	<p>Plan a legendary day at Rio de Janeiro</p>
 			 	</div>
-				
+
+				<div id="cntr-about-btn">
+			    	<button id="btn-about" type="button" class="btn btn-block btn-info btn-md">
+			    		About
+			    	</button>
+			  	</div>
+
 				<div id="cntr-generate-day">
 			    	<button id="btn-generate-day" type="button" class="btn btn-block btn-success btn-lg">
 			    		New Day Plan
 			    	</button>
-			  	</div><!-- /.col-lg-6 -->
+			  	</div>
 
-			  	<div id="day-container">
+			  	<div id="ctnr-day-plan" class = "initially-hidden">
 		  			<ul class="list-group">
 						<li class="list-group-item">9:00 - 12:00: Jardim botânico</li>
 						<li class="list-group-item">12:00 - 14:00: Almoço no restaurante X</li>
@@ -37,6 +41,11 @@
 						<li class="list-group-item">20:00 - 23:00: Jantar na lagoa</li>
 					</ul>
 		  		</div>
+		  	</div>
+
+		  	<div id="cntr-about" class="col-lg-6 initially-hidden">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, nisi eget vehicula feugiat, libero est pharetra nunc, sed mollis augue elit in tortor. Curabitur vehicula, diam at fringilla dignissim, lorem justo porttitor ante, sit amet pretium massa lorem et diam. Curabitur ac lobortis dolor, in malesuada leo. Mauris eu pellentesque mauris.</p>
+				<p>Sed pretium ullamcorper nunc, a iaculis elit ultricies ac. Sed mollis velit quis sollicitudin ornare. Proin condimentum eros ut libero porttitor, vel mattis orci adipiscing. Etiam tincidunt ligula in nunc hendrerit, lacinia iaculis augue ullamcorper.</p>
 		  	</div>
 		</div>
 	
@@ -48,10 +57,22 @@
 			$(document).ready(function(){
 
 				$("#btn-generate-day").click(function(e){
-					$("#day-container").clearQueue();
-					$("#day-container").fadeOut(0);
-					$("#day-container").delay(250);
-					$("#day-container").slideDown(200);
+					$("#ctnr-day-plan").clearQueue();
+					$("#ctnr-day-plan").fadeOut(0);
+					$("#ctnr-day-plan").delay(250);
+					$("#ctnr-day-plan").slideDown(200);
+				});
+
+				$("#btn-about").click(function(e){
+					
+					if ($("#cntr-about").is(":visible"))
+					{
+						$("#cntr-about").fadeOut(0);
+					}
+					else
+					{
+						$("#cntr-about").fadeIn(0);
+					}
 				});
 
 			});
