@@ -14,15 +14,14 @@
 		</div>
 
 		<div class="row">
-			<div id="cntr-main" class="col-lg-6">
 
+			<div id="cntr-main" class="col-lg-6">
 				<div id="cntr-title" class="container">
 			    	<h1>What a Day: Rio</h1>
 					<div id="cntr-about-btn">
 				    	<p id="btn-about">About</p>
 				  	</div>
 			 	</div>
-
 
 				<div id="cntr-generate-day">
 			    	<p>Plan a legendary day at Rio de Janeiro</p>
@@ -35,17 +34,21 @@
 		  	<div id="cntr-info" class="col-lg-6">
 
 		  		<div id="ctnr-day-plan" class = "initially-hidden">
-		  			<ul class="list-group">
-						<li class="list-group-item">9:00 - 12:00: Jardim botânico</li>
-						<li class="list-group-item">12:00 - 14:00: Almoço no restaurante X</li>
-						<li class="list-group-item">14:00 - 20:00: Passeio na lagoa</li>
-						<li class="list-group-item">20:00 - 23:00: Jantar na lagoa</li>
-					</ul>
+		  			<p>We are still working on this feature.</p>
+		  			<p>Sent us your email so we can contact you asap</p>
+		  			<div class="input-group">
+					    <input type="text" class="form-control">
+					    <span class="input-group-btn">
+					    	<button class="btn btn-default" type="button">Go!</button>
+					    </span>
+				    </div>
 		  		</div>
 
 		  		<div id="cntr-about" class = "initially-hidden">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean scelerisque, nisi eget vehicula feugiat, libero est pharetra nunc, sed mollis augue elit in tortor. Curabitur vehicula, diam at fringilla dignissim, lorem justo porttitor ante, sit amet pretium massa lorem et diam. Curabitur ac lobortis dolor, in malesuada leo. Mauris eu pellentesque mauris.</p>
-					<p>Sed pretium ullamcorper nunc, a iaculis elit ultricies ac. Sed mollis velit quis sollicitudin ornare. Proin condimentum eros ut libero porttitor, vel mattis orci adipiscing. Etiam tincidunt ligula in nunc hendrerit, lacinia iaculis augue ullamcorper.</p>
+					<p>Do you ever wandered: What can I do today?</p>
+					<p>Should I go to the beach or the movies? If I go to the movies, where can I eat?</p>
+					<p>What a Day is a tool to solve this problem. We create legendary days plans for you, so you can just focus on having fun!</p>
+					<p>Currently working only for Rio de Janeiro.</p>
 				</div>
 		  	</div>
 		</div>
@@ -65,19 +68,19 @@
 				    if (toggle)
 				    {
 						$("#ctnr-day-plan").delay(250);
-						$("#ctnr-day-plan").slideDown(200);
+						$("#ctnr-day-plan").fadeIn(200);
 				    }
 				}
 
 				function toggleAbout(toggle)
 				{
-					if (toggle)
+					$("#cntr-about").clearQueue();
+					$("#cntr-about").fadeOut(0);
+
+				    if (toggle)
 				    {
-				    	$("#cntr-about").fadeIn(0);
-				    }
-				    else
-				    {
-						$("#cntr-about").fadeOut(0);
+						$("#cntr-about").delay(250);
+						$("#cntr-about").fadeIn(200);
 				    }
 				}
 

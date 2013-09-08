@@ -2,6 +2,17 @@
   margin: 50px auto;
   float: left; }
 
+#cntr-info {
+  margin: 50px auto;
+  padding-right: 100px;
+  float: right; }
+  #cntr-info p {
+    color: FFFFFF;
+    text-shadow: 2px 2px 2px 111111;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: Lucida; }
+
 #cntr-generate-day {
   width: 60%;
   height: 50px;
@@ -12,7 +23,8 @@
     text-shadow: 2px 2px 2px 111111;
     font-size: 16pt;
     font-weight: bold;
-    font-family: Lucida; }
+    font-family: Lucida;
+    text-align: center; }
   #cntr-generate-day button {
     border-radius: 20px;
     background-color: 34D800;
@@ -42,16 +54,6 @@
 
 #btn-about:hover {
   cursor: pointer; }
-
-#cntr-info {
-  margin: 100px auto;
-  float: left; }
-  #cntr-info p {
-    color: FFFFFF;
-    text-shadow: 2px 2px 2px 111111;
-    font-size: 16pt;
-    font-weight: bold;
-    font-family: Lucida; }
 
 /*END About*/
 #cntr-title {

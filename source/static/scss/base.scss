@@ -4,6 +4,22 @@
 	float:left;
 }
 
+#cntr-info
+{
+	margin:50px auto;
+	padding-right: 100px;
+	float:right;
+
+	p
+	{
+		color : FFFFFF;
+		text-shadow: 2px 2px 2px 111111;
+		font-size: 16pt;
+		font-weight: bold;
+		font-family: Lucida;
+	}
+}
+
 #cntr-generate-day
 {
 	width: 60%;
@@ -18,6 +34,7 @@
 		font-size: 16pt;
 		font-weight: bold;
 		font-family: Lucida;
+		text-align:center;
 	}
 
 	button
@@ -60,21 +77,6 @@
 #btn-about:hover
 {
 	cursor:pointer;
-}
-
-#cntr-info
-{
-	margin:100px auto;
-	float:left;
-
-	p
-	{
-		color : FFFFFF;
-		text-shadow: 2px 2px 2px 111111;
-		font-size: 16pt;
-		font-weight: bold;
-		font-family: Lucida;
-	}
 }
 
 /*END About*/
