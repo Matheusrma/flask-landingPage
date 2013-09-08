@@ -1,19 +1,42 @@
 #cntr-main
 {
-	margin:50px auto;
+	margin-top: 50px;
+	margin-left: 80px;
+
 	float:left;
+
+	background-color: rgba(33,33,33,0.2);
+	border-radius: 20px;
+}
+
+#cntr-title
+{
+	h1
+	{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 36pt;
+		font-family: Lucida;
+		margin-bottom: 0px;
+	}
+
+	text-align: center;
 }
 
 #cntr-info
 {
-	margin:50px auto;
-	padding-right: 100px;
+	margin-top: 50px;
+	margin-right: 80px;
+
 	float:right;
+	background-color: rgba(33,33,33,0.2);
+	border-radius: 20px;
+	padding: 10px;
 
 	p
 	{
 		color : FFFFFF;
-		text-shadow: 2px 2px 2px 111111;
+		text-shadow: 1px 1px 1px 111111;
 		font-size: 16pt;
 		font-weight: bold;
 		font-family: Lucida;
@@ -23,18 +46,19 @@
 #cntr-generate-day
 {
 	width: 60%;
-	height: 50px;
+	height: 110px;
 	margin:20px auto;
 	float:center;
 
 	p
 	{
 		color : FFFFFF;
-		text-shadow: 2px 2px 2px 111111;
+		text-shadow: 1px 1px 1px 111111;
 		font-size: 16pt;
 		font-weight: bold;
 		font-family: Lucida;
 		text-align:center;
+		width: 100%;
 	}
 
 	button
@@ -43,7 +67,7 @@
 		background-color: 34D800;
 
 		color: FFFFFF;
-		text-shadow: 2px 2px 2px 111111;
+		text-shadow: 1px 1px 1px 111111;
 		font-size: 20pt;
 		font-weight: bold;
 
@@ -59,43 +83,22 @@
 
 #cntr-about-btn
 {
-	text-align: center;
-	width: 25%;
 	margin:0px auto;
-	float:center;
+	text-align: center;
+
+	width: 25%;
 }
 
 #btn-about
 {
 	color : FFFFFF;
-	text-shadow: 2px 2px 2px 111111;
+	text-shadow: 1px 1px 1px 111111;
 	font-size: 18pt;
 	font-family: Lucida;
 	font-weight: bold;
 }
 
-#btn-about:hover
-{
-	cursor:pointer;
-}
-
 /*END About*/
-
-#cntr-title
-{
-	h1
-	{
-		color : FFFFFF;
-		text-shadow: 2px 2px 2px 111111;
-		font-size: 36pt;
-		font-family: Lucida;
-		margin-bottom: 0px;
-	}
-
-	text-align: center;
-	margin:0 auto;
-	float:center;
-}
 
 #cntr-background-img {
     img
@@ -110,4 +113,9 @@
 .initially-hidden
 { 
 	display: none; 
+}
+
+.mouse-hover-pointer:hover
+{
+	cursor: pointer;
 }

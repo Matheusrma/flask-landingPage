@@ -15,23 +15,23 @@
 
 		<div class="row">
 
-			<div id="cntr-main" class="col-lg-6">
+			<div id="cntr-main" class="col-lg-5">
 				<div id="cntr-title" class="container">
-			    	<h1>What a Day: Rio</h1>
+			    	<h1 id="btn-home" class = "mouse-hover-pointer">What a Day: Rio</h1>
 					<div id="cntr-about-btn">
-				    	<p id="btn-about">About</p>
+				    	<p id="btn-about" class = "mouse-hover-pointer">About</p>
 				  	</div>
 			 	</div>
 
 				<div id="cntr-generate-day">
 			    	<p>Plan a legendary day at Rio de Janeiro</p>
-			    	<button id="btn-generate-day" type="button" class="btn">
+			    	<button id="btn-generate-day" class="btn">
 			    		New Day Plan
 			    	</button>
 			  	</div>
 		  	</div>
 
-		  	<div id="cntr-info" class="col-lg-6">
+		  	<div id="cntr-info" class="col-lg-5">
 
 		  		<div id="ctnr-day-plan" class = "initially-hidden">
 		  			<p>We are still working on this feature.</p>
@@ -45,10 +45,10 @@
 		  		</div>
 
 		  		<div id="cntr-about" class = "initially-hidden">
-					<p>Do you ever wandered: What can I do today?</p>
-					<p>Should I go to the beach or the movies? If I go to the movies, where can I eat?</p>
-					<p>What a Day is a tool to solve this problem. We create legendary days plans for you, so you can just focus on having fun!</p>
-					<p>Currently working only for Rio de Janeiro.</p>
+					<p>Do you ever wandered: What can you I do today?</p>
+					<p>Should I go to the beach or the movies? If I go to the movies, is there a nice restaurant near it? Is their food too pricey?</p>
+					<p>"What a Day" is an app that take all this questions away. We create awesome days plans, so you can just focus on having fun!</p>
+					<p style="color:orange;">Currently working only for Rio de Janeiro.</p>
 				</div>
 		  	</div>
 		</div>
@@ -60,29 +60,41 @@
    		<script>
 			$(document).ready(function(){
 
-				function toggleDay(toggle)
-				{
+				function toggleDay(toggle){
+
+				    toggleInfoBox(false);
 				    $("#ctnr-day-plan").clearQueue();
 					$("#ctnr-day-plan").fadeOut(0);
 
 				    if (toggle)
 				    {
+				    	toggleInfoBox(true);
 						$("#ctnr-day-plan").delay(250);
 						$("#ctnr-day-plan").fadeIn(200);
 				    }
 				}
 
-				function toggleAbout(toggle)
-				{
+				function toggleAbout(toggle){
+					toggleInfoBox(false);
 					$("#cntr-about").clearQueue();
 					$("#cntr-about").fadeOut(0);
 
 				    if (toggle)
 				    {
+				    	toggleInfoBox(true);
 						$("#cntr-about").delay(250);
 						$("#cntr-about").fadeIn(200);
 				    }
 				}
+
+				function toggleInfoBox(toggle){
+					if (toggle)
+						$("#cntr-info").fadeIn(0);
+					else
+						$("#cntr-info").fadeOut(0);
+				}
+
+				toggleInfoBox(false);
 
 				$("#btn-generate-day").click(function(e){
 					toggleAbout(false);
@@ -91,7 +103,12 @@
 
 				$("#btn-about").click(function(e){
 					toggleDay(false);
-					toggleAbout(!$("#cntr-about").is(":visible"));
+					toggleAbout(true);
+				});
+
+				$("#btn-home").click(function(e){
+					toggleDay(false);
+					toggleAbout(false);
 				});
 			});
 		</script>
