@@ -1,48 +1,48 @@
+#cntr-background-img img {
+  position: absolute;
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important; }
+
 #cntr-main {
-  margin-top: 50px;
-  margin-left: 80px;
-  float: left;
-  background-color: rgba(33, 33, 33, 0.2);
-  border-radius: 20px; }
+  text-align: center;
+  margin-top: 120px; }
 
 #cntr-title {
-  text-align: center; }
+  text-align: left;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px; }
   #cntr-title h1 {
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
     font-size: 36pt;
-    font-family: Lucida;
+    font-family: Verdana;
+    font-weight: bold;
     margin-bottom: 0px; }
 
-#cntr-info {
-  margin-top: 50px;
-  margin-right: 80px;
-  float: right;
-  background-color: rgba(33, 33, 33, 0.2);
-  border-radius: 20px;
-  padding: 10px; }
-  #cntr-info p {
-    color: FFFFFF;
-    text-shadow: 1px 1px 1px 111111;
-    font-size: 16pt;
-    font-weight: bold;
-    font-family: Lucida; }
-
 #cntr-generate-day {
-  width: 60%;
+  width: 80%;
   height: 110px;
   margin: 20px auto;
   float: center; }
   #cntr-generate-day p {
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
-    font-size: 16pt;
+    font-size: 18pt;
     font-weight: bold;
     font-family: Lucida;
     text-align: center;
     width: 100%; }
+  #cntr-generate-day h1 {
+    color: FFFFFF;
+    text-shadow: 1px 1px 1px 111111;
+    font-size: 36pt;
+    font-family: Verdana;
+    font-weight: bold;
+    margin-bottom: 0px; }
   #cntr-generate-day button {
-    border-radius: 20px;
+    border-radius: 8px;
     background-color: 34D800;
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
@@ -54,26 +54,63 @@
     float: center;
     display: block; }
 
-/*BEGIN About*/
-#cntr-about-btn {
-  margin: 0px auto;
-  text-align: center;
-  width: 25%; }
+#ctnr-day-plan {
+  width: 45%;
+  height: 110px;
+  margin: 100px auto;
+  float: center;
+  text-align: center; }
+  #ctnr-day-plan p {
+    color: FFFFFF;
+    text-shadow: 1px 1px 1px 111111;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: Lucida;
+    margin-bottom: 0px; }
 
-#btn-about {
-  color: FFFFFF;
-  text-shadow: 1px 1px 1px 111111;
-  font-size: 18pt;
-  font-family: Lucida;
-  font-weight: bold; }
+#input-email {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  float: center; }
 
-/*END About*/
-#cntr-background-img img {
-  position: absolute;
-  z-index: -1;
-  width: 100% !important;
-  height: 100% !important; }
+/*#cntr-info{
+	margin-top: 50px;
+	margin-right: 80px;
 
+	float:right;
+	padding: 10px;
+
+	p{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 16pt;
+		font-weight: bold;
+		font-family: Lucida;
+	}
+}
+
+
+BEGIN About
+
+#cntr-about-btn{
+	margin:0px auto;
+	text-align: center;
+
+	width: 25%;
+}
+
+#btn-about{
+	color : FFFFFF;
+	text-shadow: 1px 1px 1px 111111;
+	font-size: 18pt;
+	font-family: Lucida;
+	font-weight: bold;
+}
+
+/*END About
+*/
 .initially-hidden {
   display: none; }
 

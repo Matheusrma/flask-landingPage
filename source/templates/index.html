@@ -10,28 +10,41 @@
 	<body>
 
 		<div id="cntr-background-img">
-			<img src="static/img/rio.jpg" alt="Background Image" title="Background Image" />
+			<img src="static/img/rioBlue.jpg" alt="Background Image" title="Background Image" />
 		</div>
 
 		<div class="row">
+			<div id="cntr-title" class="container">
+		    	<h1 id="btn-home">WhatADay: Rio</h1>
+		 	</div>
+		<div>
 
-			<div id="cntr-main" class="col-lg-5">
-				<div id="cntr-title" class="container">
-			    	<h1 id="btn-home" class = "mouse-hover-pointer">What a Day: Rio</h1>
-					<div id="cntr-about-btn">
-				    	<p id="btn-about" class = "mouse-hover-pointer">About</p>
-				  	</div>
-			 	</div>
-
+		<div class ="row">	
+			<div id="cntr-main" class="col-lg-12">
 				<div id="cntr-generate-day">
-			    	<p>Plan a legendary day at Rio de Janeiro</p>
+			    	<h1>The easiet way to plan your day out</h1>
+			    	<p>Plan an awesome day with a single click.</p>
 			    	<button id="btn-generate-day" class="btn">
-			    		New Day Plan
+			    		Give me a plan
 			    	</button>
 			  	</div>
 		  	</div>
+			
+			<div id="ctnr-day-plan" class="col-lg-12 initially-hidden">
+	  			<p>Sorry, we are still working on this awesome feature for you.</p>
+	  			<p>Sent us your email so we can contact you as soon as it is ready</p>
+	  			<div id="input-email" class="input-group">
+				    <input type="text" placeholder="Email..." class="form-control">
+				    <span class="input-group-btn">
+				    	<button class="btn btn-default" type="button">Send</button>
+				    </span>
+			    </div>
+	  		</div>
 
-		  	<div id="cntr-info" class="col-lg-5">
+			<!-- <div id="cntr-about-btn">
+		    	<p id="btn-about" class = "mouse-hover-pointer">About</p>
+		  	</div> -->
+		  	<!-- <div id="cntr-info" class="col-lg-5">
 
 		  		<div id="ctnr-day-plan" class = "initially-hidden">
 		  			<p>We are still working on this feature.</p>
@@ -50,7 +63,7 @@
 					<p>"What a Day" is an app that take all this questions away. We create awesome days plans, so you can just focus on having fun!</p>
 					<p style="color:orange;">Currently working only for Rio de Janeiro.</p>
 				</div>
-		  	</div>
+		  	</div> -->
 		</div>
 	
 		<script src="//code.jquery.com/jquery.js"></script>
@@ -62,54 +75,35 @@
 
 				function toggleDay(toggle){
 
-				    toggleInfoBox(false);
 				    $("#ctnr-day-plan").clearQueue();
 					$("#ctnr-day-plan").fadeOut(0);
 
 				    if (toggle)
 				    {
-				    	toggleInfoBox(true);
 						$("#ctnr-day-plan").delay(250);
 						$("#ctnr-day-plan").fadeIn(200);
 				    }
 				}
 
-				function toggleAbout(toggle){
-					toggleInfoBox(false);
-					$("#cntr-about").clearQueue();
-					$("#cntr-about").fadeOut(0);
+				// function toggleAbout(toggle){
+				// 	$("#cntr-about").clearQueue();
+				// 	$("#cntr-about").fadeOut(0);
 
-				    if (toggle)
-				    {
-				    	toggleInfoBox(true);
-						$("#cntr-about").delay(250);
-						$("#cntr-about").fadeIn(200);
-				    }
-				}
-
-				function toggleInfoBox(toggle){
-					if (toggle)
-						$("#cntr-info").fadeIn(0);
-					else
-						$("#cntr-info").fadeOut(0);
-				}
-
-				toggleInfoBox(false);
+				//     if (toggle)
+				//     {
+				// 		$("#cntr-about").delay(250);
+				// 		$("#cntr-about").fadeIn(200);
+				//     }
+				// }
 
 				$("#btn-generate-day").click(function(e){
-					toggleAbout(false);
 					toggleDay(true);
 				});
 
-				$("#btn-about").click(function(e){
-					toggleDay(false);
-					toggleAbout(true);
-				});
-
-				$("#btn-home").click(function(e){
-					toggleDay(false);
-					toggleAbout(false);
-				});
+				// $("#btn-about").click(function(e){
+				// 	toggleDay(false);
+				// 	toggleAbout(true);
+				// });
 			});
 		</script>
 
