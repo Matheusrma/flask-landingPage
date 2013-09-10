@@ -16,14 +16,16 @@ body {
   text-align: left;
   margin-left: 50px;
   margin-bottom: 20px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-right: 50px;
+  max-width: 100%; }
   #cntr-title h1 {
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
     font-size: 36pt;
     font-family: Verdana;
     font-weight: bold;
-    margin-bottom: 0px; }
+    margin-bottom: 10px; }
 
 #cntr-generate-day {
   width: 80%;
