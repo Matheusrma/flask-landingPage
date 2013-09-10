@@ -72,6 +72,9 @@ body {
     font-family: Lucida;
     margin-bottom: 0px; }
 
+.txt-form {
+  margin-bottom: 8px !important; }
+
 #input-email {
   width: 50%;
   margin-top: 10px;

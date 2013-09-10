@@ -22,50 +22,21 @@
 		<div class ="row">	
 			<div id="cntr-main" class="col-lg-12">
 				<div id="cntr-generate-day">
-			    	<h1>The easiest way to plan your day out</h1>
-			    	<p>Plan a legendary day with a single click.</p>
-			    	<button id="btn-generate-day" class="btn">
-			    		Give me a plan
-			    	</button>
+					<h1>Thank you for subscribing with us!</h1>
 			  	</div>
 		  	</div>
-			
-			<div id="ctnr-day-plan" class="col-lg-12 initially-hidden">
-	  			<p>Sorry, we are still working on this awesome feature for you.</p>
-	  			<p>Tell us your email and we will contact you as soon as it is ready</p>
-
-	  			<form action="/mail" method="post">
-		  			<div id="input-email" class="input-group">
-					    <input name="name" type="text" placeholder="Your Name..." class="txt-form form-control" required>
-					    <input name="email" type="text" placeholder="Your Email..." class="txt-form form-control" required>
-					  	<button class="btn btn-default" type="submit">Send</button>
-					</div>
-				</form>
-	  		</div>
 		</div>
 	
 		<script src="//code.jquery.com/jquery.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
    		<script src="static/js/bootstrap.min.js"></script>
 
-   		<script>
+		<script>
 			$(document).ready(function(){
 
-				function toggleDay(toggle){
-
-				    $("#ctnr-day-plan").clearQueue();
-					$("#ctnr-day-plan").fadeOut(0);
-
-				    if (toggle)
-				    {
-						$("#ctnr-day-plan").delay(250);
-						$("#ctnr-day-plan").fadeIn(200);
-				    }
-				}
-
-				$("#btn-generate-day").click(function(e){
-					toggleDay(true);
-				});
+				setTimeout(function(){
+			    	window.location.replace('/');
+			    }, 3000);
 			});
 		</script>
 
