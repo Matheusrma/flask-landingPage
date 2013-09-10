@@ -1,0 +1,32 @@
+*****WhatADay
+
+**Visão
+
+- WhatADay tem como objetivo facilitar o planejamento de dias de lazer para qualquer pessoa em qualquer lugar do mundo, residentes ou turistas.
+
+**Hipóteses
+
+ H1-As pessoas não querem ajuda para planejar seus dias de lazer.
+ H2-As pessoas não querem usar o computador para gerar seus dias de lazer.
+ H3-Os residentes não necesitam do nosso serviço
+
+**Riscos
+
+ R1-Não ser capaz de gerar dias bons o sulficiente
+ R2-Não encontrar uma boa base de dados
+ R3-Não serei capaz de adicionar preços na busca
+
+*****MVP #1
+
+- No nosso primeiro MVP atacaremos a hipótese H1 com o seguinte set de features:
+	- Landing Page bonitinha
+		- Logo provisório
+	- Texto de About com botão ?
+	- Fake Botão Verde e brilhante para gerar o plano
+	- Caixa de email funcional para quem quiser se inscrever   
+	- Google Ads apenas para o Rio de Janeiro
+
+- Métricas usadas
+	- Vizualização de Ad    -> Landing page hits
+	- Landing page hits     -> Generate button click
+	- Generate button click -> Email registrado 

@@ -1,0 +1,110 @@
+body{
+	overflow-x: hidden;
+}
+
+#cntr-background-img {
+    img{
+		position: absolute;
+    	z-index: -1;
+    	width: 100% !important;
+    	height: 100% !important;
+    }
+}
+
+#cntr-main{
+	text-align: center;
+	margin-top: 120px;
+}
+
+#cntr-title{
+	h1{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 36pt;
+		font-family: Verdana;
+		font-weight: bold;
+		margin-bottom: 0px;
+	}
+	
+	border-bottom:2px solid white;
+	text-align: left;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	margin-top: 10px;
+	width:100%;
+}
+
+#cntr-generate-day{
+	width: 80%;
+	height: 110px;
+	margin:20px auto;
+	float:center;
+
+	p{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 18pt;
+		font-weight: bold;
+		font-family: Lucida;
+		text-align:center;
+		width: 100%;
+	}
+
+	h1{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 36pt;
+		font-family: Verdana;
+		font-weight: bold;
+		margin-bottom: 0px;
+	}
+
+	button{
+		border-radius: 8px;
+		background-color: 00BB3F;
+
+		color: FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 20pt;
+		font-weight: bold;
+
+		height: 60px;
+		width: 250px;
+		margin: 0 auto;
+		float:center;
+		display: block;
+	}
+}
+
+#ctnr-day-plan{
+	width: 45%;
+	height: 110px;
+	margin:100px auto;
+	float:center;
+	text-align: center;
+
+	p{
+		color : FFFFFF;
+		text-shadow: 1px 1px 1px 111111;
+		font-size: 16pt;
+		font-weight: bold;
+		font-family: Lucida;
+		margin-bottom: 0px;
+	}
+}
+
+#input-email{
+	width: 50%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	float:center;
+}
+
+.initially-hidden{ 
+	display: none; 
+}
+
+.mouse-hover-pointer:hover{
+	cursor: pointer;
+}
