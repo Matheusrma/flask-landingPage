@@ -17,18 +17,16 @@ def main():
 def mail():
 	newMail = request.form['email'];
 	newName = request.form['name'];
+	emailValid = validate_email(newMail) 
 
-	if (validate_email(newMail)):
-		send_email("[NewCustomer] "+newMail, SENDER[0], SENDER, 
-					render_template("basicEmail.txt" , email = newMail , name = newName),
-        			render_template("basicEmail.html", email = newMail , name = newName))
-		return redirect(url_for('email_sent'))
-
-	return redirect(url_for('main'))
+	send_email("[NewCustomer] "+newMail, SENDER[0], SENDER, 
+				render_template("basicEmail.txt" , email = newMail , name = newName, isValid = emailValid),
+    			render_template("basicEmail.html", email = newMail , name = newName, isValid = emailValid))
+	return redirect(url_for('email_sent',isValidEmail = emailValid))
 	
-@app.route('/emailSent')
-def email_sent():
-	return render_template('emailSent.html');
+@app.route('/emailSent/<isValidEmail>')
+def email_sent(isValidEmail):
+	return render_template('emailSent.html', isValid = isValidEmail);
 
 def send_email(subject, sender, recipients, text_body, html_body):
     msg = Message(subject, sender = sender, recipients = recipients)
