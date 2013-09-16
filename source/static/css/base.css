@@ -23,7 +23,7 @@ body {
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
     font-size: 36pt;
-    font-family: Verdana;
+    font-family: Helvetica;
     font-weight: bold;
     margin-bottom: 10px; }
 
@@ -36,14 +36,14 @@ body {
     text-shadow: 1px 1px 1px 111111;
     font-size: 18pt;
     font-weight: bold;
-    font-family: Lucida;
+    font-family: Helvetica;
     text-align: center;
     width: 100%; }
   #cntr-generate-day h1 {
     color: FFFFFF;
     text-shadow: 1px 1px 1px 111111;
     font-size: 36pt;
-    font-family: Verdana;
+    font-family: Helvetica;
     font-weight: bold;
     margin-bottom: 0px; }
   #cntr-generate-day button {
@@ -69,7 +69,7 @@ body {
     text-shadow: 1px 1px 1px 111111;
     font-size: 16pt;
     font-weight: bold;
-    font-family: Lucida;
+    font-family: Helvetica;
     margin-bottom: 0px; }
 
 .txt-form {
